@@ -1,5 +1,5 @@
 ---
-apiversion: v1
+apiVersion: v1
 kind: Pod
 metadata:
   name: nginx-pod
@@ -8,10 +8,10 @@ spec:
     - name: webserver
       image: nginx:1.25
       ports: 
-        - containerport: 80
+        - containerPort: 80
           protocol: TCP
     - name: jenkins
       image: jenkins/jenkins:jdk17
       ports: 
-        - containerport: 8080
+        - containerPort: 8080
           protocol: TCP   
