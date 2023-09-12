@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: webserver
-      image: nginx:1.14.2
+      image: nginx:1.25
       ports: 
         - ContainerPort: 80
           protocol: TCP
