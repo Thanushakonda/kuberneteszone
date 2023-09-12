@@ -1,0 +1,12 @@
+---
+apiversion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+    - name: webserver
+      image: nginx:1.25
+      ports: 
+        - containerport: 80
+          protocol: TCP
